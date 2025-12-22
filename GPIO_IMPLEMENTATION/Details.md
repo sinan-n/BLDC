@@ -1,7 +1,4 @@
-Below is the **final `.md` content**, ready to be pasted directly into a GitHub Markdown file (for example, `six_step_commutation.md`).
-No code fences are used, so GitHub will render it immediately.
 
----
 
 # BLDC Motor – Six Step Commutation
 
@@ -33,10 +30,4 @@ The motor considered here rotates in the **clockwise (CW) direction** using the 
 Each Hall sensor combination corresponds to a **60° electrical sector** of rotor position.
 Applying the correct phase excitation for each sector produces continuous torque, resulting in smooth clockwise rotation of the BLDC motor.
 
----
 
-If you want, I can also:
-
-* Add a **CCW (reverse) commutation table**
-* Add a **firmware-oriented lookup table**
-* Add **timing diagrams or vector explanation** for reports or viva preparation
