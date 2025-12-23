@@ -14,12 +14,12 @@ The motor considered here rotates in the **clockwise (CW) direction** using the 
 
 | Hall A | Hall B | Hall C | Decimal | Phase U | Phase V | Phase W |
 | -----: | -----: | -----: | ------: | :-----: | :-----: | :-----: |
-|      0 |      0 |      1 |       1 |    Z    |    −    |    +    |
-|      1 |      0 |      1 |       5 |    +    |    −    |    Z    |
-|      1 |      0 |      0 |       4 |    +    |    Z    |    −    |
-|      1 |      1 |      0 |       6 |    Z    |    +    |    −    |
-|      0 |      1 |      0 |       2 |    −    |    +    |    Z    |
-|      0 |      1 |      1 |       3 |    −    |    Z    |    +    |
+|      0 |      0 |      1 |       1 |    -    |    Z    |    +    |
+|      1 |      0 |      1 |       5 |    Z    |    +    |    -    |
+|      1 |      0 |      0 |       4 |    -    |    +    |    Z    |
+|      1 |      1 |      0 |       6 |    +    |    -    |    Z    |
+|      0 |      1 |      0 |       2 |    Z    |    -    |    +    |
+|      0 |      1 |      1 |       3 |    +    |    Z    |    -    |
 
 ## Legend
 
