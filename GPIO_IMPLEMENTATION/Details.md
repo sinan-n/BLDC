@@ -9,17 +9,18 @@ To achieve proper rotation, it is essential to know:
 * The **sequence of phase excitation** required to produce electromagnetic torque
 
 The motor considered here rotates in the **clockwise (CW) direction** using the Hall sensor and phase excitation relationship shown below.
+To reverse the rotation we need to change the direction of current flow , ie flip the signs of the phases.
 
 ## Hall Sensor to Phase Excitation Mapping (CW Rotation)
 
 | Hall A | Hall B | Hall C | Decimal | Phase U | Phase V | Phase W |
 | -----: | -----: | -----: | ------: | :-----: | :-----: | :-----: |
-|      0 |      0 |      1 |       1 |    -    |    Z    |    +    |
-|      1 |      0 |      1 |       5 |    Z    |    +    |    -    |
-|      1 |      0 |      0 |       4 |    -    |    +    |    Z    |
-|      1 |      1 |      0 |       6 |    +    |    -    |    Z    |
-|      0 |      1 |      0 |       2 |    Z    |    -    |    +    |
-|      0 |      1 |      1 |       3 |    +    |    Z    |    -    |
+|      0 |      0 |      1 |       1 |    -    |    +    |    Z    |
+|      1 |      0 |      1 |       5 |    +    |    Z    |    -    |
+|      1 |      0 |      0 |       4 |    Z    |    +    |    -    |
+|      1 |      1 |      0 |       6 |    Z    |    -    |    +    |
+|      0 |      1 |      0 |       2 |    -    |    Z    |    +    |
+|      0 |      1 |      1 |       3 |    +    |    -    |    Z    |
 
 ## Legend
 
