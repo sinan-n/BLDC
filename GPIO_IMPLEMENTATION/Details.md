@@ -37,7 +37,7 @@ Applying the correct phase excitation for each sector produces continuous torque
 Forward:
 6 → 4 → 5 → 1 → 3 → 2
 
-1 → 001 101 → 3
+1 → 001 101 → 3 <br />
 2 → 010 011 → 6
 3 → 010 110 → 2
 4 → 100 110 → 5
