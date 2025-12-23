@@ -67,12 +67,12 @@ uint32_t state_6 =0;
 uint8_t dir = 1;
 
 const uint8_t fr_control_lookup[7][6] = {{0,0,0,0,0,0},// reset   // DIR 0
-										{0,0,1,1,0,1},// reaching hal state 3
-										{0,1,0,0,1,1},// reaching hal state 6
-									    {0,1,0,1,1,0},// reaching hal state 2
-									    {1,0,0,1,1,0},// reaching hal state 5
-									    {0,0,1,0,1,1},// reaching hal state 1
-									  	{1,0,0,1,0,1},// reaching hal state 4
+										{0,1,0,1,1,0},// reaching hal state 3
+										{1,0,0,1,0,1},// reaching hal state 6
+									    {0,1,0,0,1,1},// reaching hal state 2
+									    {0,0,1,0,1,1},// reaching hal state 5
+									    {0,0,1,1,0,1},// reaching hal state 1
+									  	{1,0,0,1,1,0},// reaching hal state 4
 		                            };
 
 const uint8_t re_control_lookup[7][6] = {{0,0,0,0,0,0},//reset        //DIR 1 //ok
@@ -85,6 +85,8 @@ const uint8_t re_control_lookup[7][6] = {{0,0,0,0,0,0},//reset        //DIR 1 //
 		                            };
 
 
+uint8_t control_lookup_pos = 0b000000;
+uint8_t delay = 0;
 
 
 /* USER CODE END PV */
@@ -144,7 +146,7 @@ int main(void)
 	  	  	  state_4 += (hall_state == 4) ? 1 : 0;
 	  	  	  state_5 += (hall_state == 5) ? 1 : 0;
 	  	  	  state_6 += (hall_state == 6) ? 1 : 0;
-	  
+
 	 		  hall_A = (GPIOA ->IDR& GPIO_PIN_15)?1:0;
 	 		  hall_B = (GPIOB ->IDR& GPIO_PIN_3)?1:0;
 	 		  hall_C = (GPIOB ->IDR& GPIO_PIN_10)?1:0;
