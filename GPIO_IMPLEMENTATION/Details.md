@@ -32,6 +32,28 @@ Applying the correct phase excitation for each sector produces continuous torque
 
 <img width="50%" height="auto" alt="image" src="https://github.com/user-attachments/assets/ef4d9635-c2f5-46ab-8abc-1ec78887dc37" />
 
+## STM32F401RE Nucleo – Pin Configuration
+
+The table below shows the pin configuration used for the STM32F401RE Nucleo board.
+
+| Notation | Configuration  | Remarks |
+|---------|---------------|---------|
+| U | GPIO_output | High-side switch control pin |
+| V | GPIO_output | High-side switch control pin |
+| W | GPIO_output | High-side switch control pin |
+| ENu | GPIO_output | Used to disable/enable inverter leg U |
+| ENv | GPIO_output | Used to disable/enable inverter leg V |
+| ENw | GPIO_output | Used to disable/enable inverter leg W |
+| ha | GPIO_input | Receives Hall sensor A signal |
+| hb | GPIO_input | Receives Hall sensor B signal |
+| hc | GPIO_input | Receives Hall sensor C signal |
+
+**Notes:**
+- EN pins pull the corresponding phase to **high impedance** when driven low.
+- U, V, and W pins may be configured for **PWM output** if required.
+- Hall sensor inputs are used for **rotor position detection**.
+
+
 ## Running Logic in Simple Terms
 
 Forward:
