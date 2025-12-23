@@ -85,8 +85,6 @@ const uint8_t re_control_lookup[7][6] = {{0,0,0,0,0,0},//reset        //DIR 1 //
 		                            };
 
 
-uint8_t control_lookup_pos = 0b000000;
-uint8_t delay = 0;
 
 
 /* USER CODE END PV */
