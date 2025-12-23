@@ -27,6 +27,9 @@ The motor considered here rotates in the **clockwise (CW) direction** using the 
 * **−** : Low-side switch ON (phase sinking current)
 * **Z** : Phase floating (high-impedance state)
 
+<img width="1107" height="1102" alt="image" src="https://github.com/user-attachments/assets/ef4d9635-c2f5-46ab-8abc-1ec78887dc37" />
+
+
 Each Hall sensor combination corresponds to a **60° electrical sector** of rotor position.
 Applying the correct phase excitation for each sector produces continuous torque, resulting in smooth clockwise rotation of the BLDC motor.
 
